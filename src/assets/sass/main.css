@@ -1,0 +1,375 @@
+.linkedin {
+  background-image: url(../socials/linkedin.png);
+}
+
+.github {
+  background-image: url(../socials/github.png);
+}
+
+.instagram {
+  background-image: url(../socials/instagram.png);
+}
+
+.codepen {
+  background-image: url(../socials/codepen.png);
+}
+
+/* desktop icons */
+.terminal {
+  background-image: url(../icons/terminal.png);
+}
+
+.certificates {
+  background-image: url(../icons/certificates.png);
+}
+
+.portfolio {
+  background-image: url(../icons/portfolio.png);
+}
+
+.apps {
+  background-image: url(../icons/apps.png);
+}
+
+.music {
+  background-image: url(../icons/music.png);
+}
+
+.resume {
+  background-image: url(../icons/resume.png);
+}
+
+.profile {
+  background-image: url(../icons/profile.png);
+}
+
+.gallery {
+  background-image: url(../icons/gallery.png);
+}
+
+.flag {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.gr {
+  background-image: url(../icons/gr.png);
+}
+
+.en {
+  background-image: url(../icons/en.png);
+}
+
+.window {
+  width: 90dvw;
+  height: 80dvh;
+  max-width: 600px;
+  max-height: 550px;
+  margin: auto;
+  border-radius: 0.44rem;
+  position: inherit;
+  z-index: 999;
+}
+.window .titlebar {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 0.44rem;
+  border-top-right-radius: 0.44rem;
+  cursor: grab;
+}
+.window .titlebar .close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.statusbar {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+body,
+html {
+  overflow: hidden;
+}
+
+main {
+  scrollbar-width: none;
+  overflow-y: auto;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+textarea {
+  width: 90%;
+  height: 80%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  resize: none;
+}
+
+.errorscreen {
+  display: none;
+}
+
+/* THIS IS ERROR SCREEN FOR SMALL DEVICES */
+@media screen and (max-height: 500px) {
+  .errorscreen {
+    min-width: 100dvw;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: red;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 999999999999;
+    top: 0;
+    left: 0;
+    display: flex;
+  }
+}
+.appswindow {
+  width: 100dvw;
+  height: calc(100dvh - 30px);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  background-image: url(https://avatars.githubusercontent.com/u/201586714?v=4);
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 0.45rem;
+}
+
+.social {
+  width: 32px;
+  height: 32px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.iconbox {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: grab;
+  position: relative;
+  gap: 0.9rem;
+}
+.iconbox .icon {
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.iconbox .label {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.pdf-container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  border: 1px solid #ddd;
+  overflow: auto;
+  height: 90vh;
+}
+
+.pdfViewer .textLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.taskapp {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+}
+.taskapp:hover {
+  opacity: 0.7;
+}
+
+main {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 90%;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
+.hobbies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.hobbies span {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(137, 42, 75);
+  border-radius: 50%;
+  font-size: 1.7rem;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 0.34rem;
+}
+
+.hobbies span:hover {
+  animation: tagRotate ease-in 0.33s;
+}
+
+@keyframes tagRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.greeting {
+  text-align: center;
+  line-height: 1.7rem;
+}
+
+.intro {
+  font-weight: 300;
+}
+
+.name {
+  font-weight: 400;
+}
+
+.job {
+  font-weight: 600;
+}
+
+.iconarea:hover {
+  opacity: 0.7;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.headings {
+  line-height: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.headings .icon {
+  font-size: 2.5rem;
+}
+.headings .head1 {
+  font-size: 1.3rem;
+}
+
+.courses-list {
+  width: 90%;
+  display: grid;
+  grid-template-rows: 1fr;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.courses-list .cert img {
+  width: 100%;
+  border-radius: 0.45rem;
+}
+
+@media screen and (min-width: 600px) {
+  .courses-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.infobox {
+  width: 200px;
+  height: 200px;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.9rem;
+}
+.infobox .drivename {
+  font-weight: 800;
+}
+.infobox .disk {
+  width: 120px;
+  height: 120px;
+  background-image: url(../icons/disk.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=main.css.map */
